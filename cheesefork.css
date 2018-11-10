@@ -1,0 +1,93 @@
+@media screen and (max-width: 350px) {
+    #top-navbar .navbar-brand {
+        font-size: 1rem;
+    }
+    #top-navbar .navbar-brand img {
+        height: 20px;
+        width: auto;
+    }
+}
+
+#top-navbar .navbar-brand {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+#top-navbar .navbar-nav .nav-link {
+    color: rgba(0,0,0,.9);
+}
+
+#top-navbar .navbar-nav .nav-link.disabled {
+    color: rgba(0,0,0,.3);
+}
+
+#top-navbar-supported-content.top-navbar-content-uninitialized {
+    visibility: hidden !important;
+}
+
+/* make the filter footer text align to the right */
+.course-filter-dialog .modal-footer {
+    justify-content: space-between;
+}
+
+.course-filter-dialog .modal-footer .bootstrap-dialog-footer {
+    margin-right: auto;
+}
+
+#shared-schedule-title {
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#general-info {
+    font-size: .8rem;
+    text-align: center;
+}
+
+#course-button-list {
+    margin-top: 20px;
+}
+
+#course-button-list .list-group-item:last-child {
+    margin-bottom: 10px;
+}
+
+#course-exam-info-wrapper {
+    /* A workaround to an Edge bug: https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/18883305/ */
+    filter: brightness(1);
+}
+
+#course-exam-info {
+    position: sticky;
+    bottom: 20px;
+}
+
+/* Set selectize dropdown cursor to be pointer instead of text selection */
+.selectize-dropdown .option {
+    cursor: default;
+}
+
+.course-description-tooltip-inner {
+    min-width: 30vw;
+}
+
+/* Overrides list-group-item from Bootstrap */
+.list-group-item {
+    font-size: .8rem;
+    cursor: default;
+}
+
+/* bootstrap4-dialog RTL fix */
+.bootstrap-dialog .bootstrap-dialog-header {
+    flex-grow: 1;
+}
+
+.bootstrap-dialog .bootstrap-dialog-close-button {
+    float: left;
+}
+
+/* bootstrap4-dialog - add spacing between buttons */
+.bootstrap-dialog .bootstrap-dialog-footer-buttons .btn {
+    margin-right: .5rem;
+}
